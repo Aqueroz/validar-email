@@ -1,0 +1,71 @@
+/* particularmente prefiro muito mais essa sintaxe estilo sass/scss */
+
+/* um padrao de cores que gosto de usar */
+:root{
+    /* base caso queira mudar posteriormente */
+    --preto:#000;
+    --cinza-escuro:#111111;
+    --azul-escuro:#003366;
+    --ciano:#00CCCC;
+    --roxo:#660099;
+    --prata:#CCCCCC;
+    --azul-acizentado: #4A6572;
+    --azul-claro:#4EB3D3;
+
+    /* cores neon, gosto delas */
+
+    --verde-neon: #39FF14;
+    --azul-neon:#00FFFF;
+    --rosa-neon: #FF1493;
+    --laranja-neon:#FFA500;
+    --amarelo-neon:#FFFF00;
+    --roxo-neon: #9400D3;
+
+/* usar um padrao, sendo necessario apenas chamar a variavel. creio que fica mais facil fazer uma alteracao geral, visto que site está sendo criado paara testar combinacoes de cores */
+    --sombra-neon: 0 0 10px 5px;
+
+}
+
+
+.conteudo__estilo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & .input__estilo{
+        background-color: var(--prata);
+        border: 2px solid green;
+        display: flex;
+        flex-direction: column;
+
+        & input{
+            margin: 12px;
+
+        }
+
+    }
+    & h3{
+        padding-left: 4px;
+    }
+}
+
+.mensagem__invalida{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 30px;
+
+    border: 2px solid var(--rosa-neon);
+}
+
+.mensagem__valida{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 30px;
+
+    border: 2px solid var(--verde-neon);
+}
